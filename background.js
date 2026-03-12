@@ -8,5 +8,6 @@ chrome.declarativeNetRequest.updateDynamicRules({
             resourceTypes: ["script", "image", "sub_frame"]
         }
         
-    }]
+    }],
+    removeRuleIds: [1]
 })
