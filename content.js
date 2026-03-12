@@ -1,0 +1,1 @@
+const adElements = document.querySelectorAll('[id*=*ad')
