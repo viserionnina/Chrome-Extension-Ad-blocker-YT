@@ -3,16 +3,17 @@
     "name":"Ad Blocker for YT",
     "version": "1.1",
     "description": "Siple ad blocker for YouTube.",
-    "premissions":[
-        "webRequest","webRequestBlocking","delacrativeNetRequest","activeTab"
+    "permissions":[
+        "delacrativeNetRequest",
+        "activeTab"
     ],
-    "host_premission":["<all_urls>"],
+    "host_premission":["*://*.youtube.com/*"],
     "background":{
         "service_worker": "background.js"
     },
     "content_scripts":[
         {
-            "matches": ["<all_urls>"],
+            "matches": ["*://*.youtube.com/*"],
             "js": ["content.js"]
         }
     ]
