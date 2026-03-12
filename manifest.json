@@ -4,7 +4,7 @@
     "version": "1.1",
     "description": "Siple ad blocker for YouTube.",
     "permissions":[
-        "delacrativeNetRequest",
+        "delacrativeNetRequest", 
         "activeTab"
     ],
     "host_premission":["*://*.youtube.com/*"],
