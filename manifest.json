@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name":"Ad Blocker for YT",
+    "version": "1.0",
+    "description": "Siple ad blocker for YouTube.",
+    "premissions":[
+        "webRequest","webRequestBlocking","delacrativeNetRequest","activeTab"
+    ] 
+
+}
