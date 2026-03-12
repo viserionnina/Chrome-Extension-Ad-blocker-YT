@@ -5,6 +5,15 @@
     "description": "Siple ad blocker for YouTube.",
     "premissions":[
         "webRequest","webRequestBlocking","delacrativeNetRequest","activeTab"
-    ] 
-
+    ],
+    "host_premission":["<all_urls>"],
+    "background":{
+        "service_worker": "background.js"
+    },
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
 }
