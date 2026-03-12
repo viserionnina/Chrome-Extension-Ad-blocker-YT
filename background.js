@@ -4,7 +4,7 @@ chrome.declarativeNetRequest.updateDynamicRules({
         priority: 1,
         action: {type: "block"},
         condition: {
-            urlFilter: "*://*.doubleclick.net/*",
+            urlFilter: "*://*.youtube.com/*",
             resourceTypes: ["script", "image", "sub_frame"]
         }
         
