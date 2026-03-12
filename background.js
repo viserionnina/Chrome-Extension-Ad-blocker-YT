@@ -4,10 +4,20 @@ chrome.declarativeNetRequest.updateDynamicRules({
         priority: 1,
         action: {type: "block"},
         condition: {
-            urlFilter: "*://*.youtube.com/*", //Blocks everything from YT domain
+            urlFilter: "*://googleads.g.doubleclick.net/*", //Blocks everything from YT domain - *://*.youtube.com/*
+            resourceTypes: ["script", "image", "sub_frame", "xmlhttprequest"] //logos, icnons, scripts,..
+        }
+        
+    },
+    {
+        id: 2,
+        priority: 1,
+        action: {type: "block"},
+        condition: {
+            urlFilter: "*://static.doubleclick.net/*",
             resourceTypes: ["script", "image", "sub_frame"] //logos, icnons, scripts,..
         }
         
     }],
-    removeRuleIds: [1]
-})
+    removeRuleIds: [1, 2]
+});
